@@ -134,8 +134,7 @@ c. Having padding of 2px to all the sides
 .img-centre
 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto
   padding: 2px;
 }
 
