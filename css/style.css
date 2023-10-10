@@ -1,281 +1,242 @@
-/*2. The <body> element has to be styled with:
-a. Any colour you prefer for the text
-b. A background image, you can use any one from the 7 samples of dark-woodx.jpg. So, pick the
-one that reflects the colour of your website.
- If no one matches your website colour, you can use Photoshop to change its colours
- If you haven’t finished the Photoshop module, you will have no other choice just to pick one
-of the provided samples
- Make sure to have only one background image which is the one that is used in your css code
-c. The font family (face) is at least 3 options of any sans-serif fonts
-d. Margin 0 for all the four sides (top, bottom, left, right)*/
 body 
 {
-  color: rgb(19, 15, 15); 
-  background-image: url("../assets/image/dark-wood2.jpg"); 
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-    
+  font-family: Helvetica;
+  
 }
 
-/*3. Style the <div> element with class “container” (it’s the main division that contains the entire HTML
-elements inside the body):
-a. The width value can be 950px You can also use max-width: 1300px or any other value (Up
-to you) but using 950px is better for this lab-work because the width of the banner image
-b. 5px margin from top and bottom
-c. The div has to be aligned centered based in the browser window (about the left/right margins).
-Using the CSS trick to center a block level element
-d. Apply any background colour that you prefer */
-.container
-{
-  width: 950px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #c3d0d3;
-}
-
-
-/*4. Style any element with class value of “content”, in other word target the class named “content”:
-a. The line height (of the text) should be 1.4em
-b. 10px padding to all the sides*/
-.content
-{
-  line-height: 1.4em;
-  padding: 10px;
-}
-
-/*5. Style the “header, nav, and footer” elements to share the following:
-a. Any Dark/Light background colour
-b. Any Dark/Light foreground colour (normal font colour)*/
-
-header,nav,footer
-{
-  background-color: rgb(130, 144, 219);
-  color: rgb(162, 182, 180);
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-
-/*6. Style the unordered list element <ul> which is inside <nav> element (styling only a ul child of any nav
-element):
-a. 0 margin from all the sides
-b. 5px padding from all the sides*/
-nav ul 
-{
-  margin: 0;
-  padding: 5px;
-}
-
-/*7. Style the list items <li> of the main navigation (nav), or inside the nav element:
-a. To be displayed horizontally (Remember that <li> is a block-level element)
-b. Adding margin of 40px to the right of each list item
-c. All the navigation items should be displayed as Uppercase*/
-nav li
-{
-  float: left;
-  margin-right: 40px;
-  margin-left: 40px;
-  text-transform: uppercase;
-}
-
-/*8. Add the 4 pseudo classes effect to the anchor tags/elements of the main navigation list items, the
-colour should be changed (Use any colours you like/prefer):
-a. The normal link  :link
-b. The visited link  :visited
-c. The hover link  :hover
-d. The active link  :active
-
-
-*/
-
-a{
-  text-decoration: none;     /*9. Style any anchor <a> element:
-                              a. Any colour you like
-                              b. No underline*/
+#el_1
+  {
+    background-color: #222d30;
+    color: white; 
+    margin-top:50px ;
   }
 
-nav a:link {
-   color: rgb(202, 81, 34);
-}
-
-nav a:visited{
-   color:rgb(0, 221, 250);
-
-}
-
-nav a:hover{
-   color: rgb(20, 239, 13);
-}
-
-nav a:active{
-   color:#ff0077;
-}
-
-
-/*10. Style the three headings: h1, h2, and h3:
-a. To have margin of 10px for all the sides
-b. With Uppercase letters
-c. Different dark/light colour*/
-
-h1,h2,h3{
-  margin: 10px;
-  text-transform: uppercase;
-  color: rgb(1, 2, 7);
-}
-
-/*11. Style the custom class named “img-centre”:
-a. Centre the image horizontally (Hint: don’t forget that <img> is an inline element so you will
-need to make it block level element first in order to have it to work with margins)
-b. Having margin of 5px from the top and bottom
-c. Having padding of 2px to all the sides
-*/
-
-.img-centre
-{
-  display: block;
-  margin:0 auto;
-  padding: 2px;
-}
-
-/*12. Style the <audio> and <video> elements:
-a. Centre any audio or video element (horizontally)
-[Don’t forget that video/audio are both inline elements]
-b. With margin of 10px from the top and bottom*/
-audio,video{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*13. Style any <table> element:
-a. The width is 800px
-b. Centre the table horizontally with 10px of margining from the top and bottom sides
-c. The table border has to be collapsed*/
-table
-{
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-collapse: collapse;
-}
-
-/*14. Style both the <td> and <th> element of any table:
-a. Having a border with any settings you like
-b. Padding of 2px from the top/bottom and 5px from the left/right
-c. Any background colour (light/dark)
-*/
-table th
-{
-  text-transform: uppercase;
-  background-color: rgb(52, 77, 218);
-  color: rgb(241, 243, 245);
-}
-
-/*15. Style both the <th> inside any table and the <td> inside the <tfoot>:
-a. With Uppercase letters
-b. Any background colour (dark/light)
-c. Any colour (dark/light)*/
-td,th
-{
-  border-style: solid;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: rgb(130, 144, 219);/*rgb(176, 24, 115)*/
-}
-
-/*16. Style any <dt> element:
-a. Make it bold*/
-dt{
-  font-weight: bold;
-}
-
-/*17. Style any <footer> element:
-a. Change the font size to be 80% of the default font size or of the font size of the body
-b. Align your text to the centre of the table
-c. Add 1px of padding from the top/bottom and 0 from the right/left*/
-footer
-{
-  font-size: 80%;
-  text-align : center;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-right: 0;
-  padding-left:0;
-}
-
-/*18. Style any <iframe> element:
-a. Add margin of 10px for top/bottom
-b. Centre the iframe horizontally (Hint: don’t forget that <iframe> is an inline element so you will
-need to make it block level element first)
-*/
-iframe{
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*19. Style any <fieldset> element:
-a. Add width of 500px
-b. Add margin of 20px for top/bottom and centre the fieldset horizontally
-c. Add border with any style you prefer
-d. Add background colour*/
-fieldset{
-  width: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: solid;
-  background-color: #5f87c7;
-}
   
-/*20. Style any <legend> element:
-a. Italic font style
-b. Different front and background colour
-c. Margin of 0 from the top/bottom and 10px from the left/right
-d. Padding of 0 from top/bottom and 5px from the left/right
-e. Give it a rounded border with any size or setting you prefer*/
-legend{
-  font-style: italic;
-  color: rgb(4, 8, 68);
-  background-color: #6016ba;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 50%;
+button 
+{
+    background-color: red; 
+    color: white; 
+}  
+
+#el_2 button 
+{
+    background-color: rgb(12, 10, 10); 
+    color: white; 
+}  
+
+#el_2 img
+{
+  width:auto;
+  height: 60px;
+  margin: auto;
+  display: block;
+  
 }
 
-/*21. Style the <input> element that has an attribute named “type” with value of “submit”:
-a. Border with any style you like
-b. Padding of 5px for all the sides
-c. Any background colour you prefer
-d. Any colour you prefer
-*/
-input[type="submit"]
+#el_2
 {
-  border-style: solid;
-  background-color: #4139ac;
-  padding: 5px;
-  color:#7566ae;
+  color: rgb(3, 5, 5);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-/*22. Style the same <input> element that has an attribute named “type” with value of “submit” but with
-the pseudo class for the hover state (when you hover the mouse over the element):
-a. Change its text colour and its background colour
-b. Change the mouse pointer to look like a hand (the normal mouse icon for a link): */
-input[type="submit"]:hover
+.baw
 {
-  color:#4513ab;
-  background-color: #4b31a8;
-  cursor: pointer;
+  text-align: center;
+  border:solid;
+  border-radius: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image:url('../assets/images/circuit!.jpg');
+  background-size: cover;
 }
+
+
+
+.baw h2
+{
+  border-top: solid;
+}
+
+.baw p
+{
+  border-top: solid;
+}
+
+
+.skrr
+{
+  text-align: center;
+  border:solid;
+  border-radius: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image:url('../assets/images/ile.avif');
+  background-size: cover;
+}
+
+.skrr h2
+{
+  border-top: solid;
+}
+
+.skrr p
+{
+  border-top: solid;
+}
+
+
+
+.oui
+{
+  text-align: center;
+  border:solid;
+  border-radius: 10%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-image:url('../assets/images/canne.webp');
+  background-size: cover;
+}
+
+.oui h2
+{
+  border-top: solid;
+}
+
+.oui p
+{
+  border-top: solid;
+}
+
+
+#el_3
+{
+  color: rgb(5, 6, 6);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.non
+{
+
+  border:solid;
+  border-radius: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+}
+
+
+
+.pq
+{
+  height: 100%;
+}
+
+.aligne_gauche
+{
+  margin-left: 1%;
+}
+
+#el_3 a 
+{
+    
+    text-align: center;
+ 
+}
+#el_3 button{
+  background-color: rgb(12, 10, 10); 
+    color: white; 
+
+  
+}  
+
+
+
+
+
+
+#el_4
+{
+  color: rgb(1, 9, 14);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+
+
+.nos
+{
+
+  border:solid;
+  border-radius: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+
+ 
+}
+
+
+
+.ademo
+{
+  height: 100%;
+}
+
+.aligne_droite
+{
+  margin-right: 1%;
+}
+
+#el_4 a 
+{
+    
+    text-align: center;
+ 
+}
+#el_4 button{
+  background-color: rgb(12, 10, 10); 
+    color: white; 
+
+  
+}  
+
+
+.el_5b
+{
+  border:solid;
+  border-radius: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+}
+/* Aligner horizontalement les images */
+.el_5b img {
+  display: block; /* Pour résoudre les problèmes de marge blanche sous les images */
+  margin: 0 auto; /* Centrer horizontalement l'image */
+}
+
+/* Afficher les images sous forme de cercles */
+.el_5b img
+{
+  border-radius: 50%; /* Créer un effet de cercle */
+}
+
+
+
+
+.form-label {
+  font-weight: bold; /* Met en gras le texte des étiquettes */
+}
+
+.form-control {
+  border: 1px solid #ccc; /* Ajoute une bordure grise autour des champs de saisie */
+  padding: 8px; /* Ajoute un peu de marge à l'intérieur des champs de saisie */
+  margin-bottom: 10px; /* Ajoute un espace entre les champs de saisie */
+}
+
